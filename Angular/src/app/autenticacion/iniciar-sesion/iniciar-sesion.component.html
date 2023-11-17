@@ -1,1 +1,31 @@
-<p>iniciar-sesion works!</p>
+<!-- fondo-gris.component.html -->
+<div class="fondo-gris">
+    <div class="contenido-izquierda">
+      <div class="titulo">
+        <h2>
+            <img src="assets\imgs\Novus.jpg" alt="Logo" class="imagen-titulo">
+          </h2>
+        <h2>Iniciar Sesión</h2>
+      </div>
+      <div class="linea-blanca"></div>
+      <div class="texto-bajo-linea">Recupera lo perdido, conectamos tu mundo disperso.</div>
+    </div>
+    <div class="rectangulo">
+        <h3 class="titulo-rectangulo">Login</h3>
+        <!-- Campos para ingresar información -->
+        <form>
+        <input type="email" id="correo-electronico" name="correo-electronico" placeholder="Correo electrónico" required>
+        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+        <div class="botones">
+            <button type="button" class="boton-enviar">Enviar</button>
+            <button type="button" class="boton-registrarme" (click)="redirigirARegistro()">Registrarme</button>
+          </div>
+        </form>
+        <div class="olvide-contrasena">
+          <a routerLink="/recuperar">Olvidé mi contraseña</a>
+        </div>
+        <!-- Agrega más campos según sea necesario -->
+      </div>
+      
+  </div>
+  

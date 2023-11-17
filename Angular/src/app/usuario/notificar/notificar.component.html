@@ -1,1 +1,44 @@
-<p>notificar works!</p>
+<!-- fondo-gris.component.html -->
+<div class="fondo-gris">
+    <div class="header">
+        <img src="/assets/imgs/Novus.jpg" alt="Imagen Izquierda" class="imagen-izquierda">
+        <div class="user">
+            <h1>Usuario</h1>
+            <img src="/assets/imgs/user.jpg" alt="Imagen Derecha" class="imagen-derecha">
+        </div>
+    </div>
+    <div class="contenido">
+        <div class="izquierda">
+            <div class="rectangulo-gris">
+                <ul>
+                    <li class="Casa">Inicio</li>
+                    <li class="userBlanco">Solicitudes</li>
+                    <li class="actual">Notificar</li>
+                </ul>
+            </div>
+        </div>
+        <div class="derecha">
+            <h1>Notificar Objeto</h1>
+            <form>
+                <div>
+                    <label for="descripcion">Descripción del objeto:</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+                </div>
+                <div>
+                    <label for="categoria">Evento:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccione el evento</option>
+                        <option value="1">Evento 1</option>
+                        <option value="2">Evento 2</option>
+                        <option value="3">Evento 3</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="descripcion">¿En que zona se perdió el objeto?</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" required placeholder="Campo no obligatorio"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
