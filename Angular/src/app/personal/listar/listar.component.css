@@ -1,0 +1,233 @@
+/* fondo-gris.component.css */
+.fondo-gris {
+    background-color: #383c40;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fondo-gris .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.fondo-gris .header .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+}
+
+.fondo-gris .header .user h1 {
+    color: #21c6ea;
+    font-family: 'Latina Bold', sans-serif;
+    margin: 0; /* Asegura que no haya margen dentro del h1 */
+}
+
+.fondo-gris .header .imagen-izquierda {
+    max-width: 200px;
+    margin: 20px;
+}
+
+.fondo-gris .header .user .imagen-derecha {
+    max-width: 50px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.fondo-gris .contenido {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.fondo-gris .contenido .izquierda {
+    flex: 0.3;
+}
+
+.fondo-gris .contenido .izquierda .rectangulo-gris {
+    background: linear-gradient(to bottom, #383c40, #606366);
+    /* Degradado de arriba hacia abajo */
+    padding: 20px;
+    border-radius: 10px;
+    height:92%;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra la lista horizontalmente */
+}
+
+.fondo-gris .contenido .izquierda ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fondo-gris .izquierda .rectangulo-gris ul li{
+    color: #9f9f8d;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    font-size:larger;
+    
+}
+.fondo-gris .izquierda .rectangulo-gris ul li.archivos {
+    height: 40px; /* Altura específica */
+    width: 100px; /* Ancho específico */
+    line-height: 40px; /* Alineación vertical del texto dentro del elemento */
+    font-size: 18px; /* Tamaño de fuente específico */
+    background-image: url("/assets/imgs/archivoB.jpg"); /* Ruta a tu imagen */
+    background-repeat: no-repeat;
+    background-position: 20px left; /* Ajusta la posición según tu diseño */
+    padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
+    background-size: 40px 40px;
+}
+.fondo-gris .izquierda .rectangulo-gris ul li.userAzul {
+    color: #ffffff; /* Sobreescribe el color para el elemento con la clase "actual" */
+    font-weight: bold;
+    height: 40px; /* Altura específica */
+    width: 100px; /* Ancho específico */
+    line-height: 40px; /* Alineación vertical del texto dentro del elemento */
+    font-size: 18px; /* Tamaño de fuente específico */
+    background-image: url("/assets/imgs/userAzul.jpg"); /* Ruta a tu imagen */
+    background-repeat: no-repeat;
+    background-position: 20px left; /* Ajusta la posición según tu diseño */
+    padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
+    background-size: 40px 40px;
+}
+.fondo-gris .izquierda .rectangulo-gris ul li.Casa {
+    height: 40px; /* Altura específica */
+    width: 100px; /* Ancho específico */
+    line-height: 40px; /* Alineación vertical del texto dentro del elemento */
+    font-size: 18px; /* Tamaño de fuente específico */
+    background-image: url("/assets/imgs/casa.jpg"); /* Ruta a tu imagen */
+    background-repeat: no-repeat;
+    background-position: 20px left; /* Ajusta la posición según tu diseño */
+    padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
+    background-size: 40px 40px;
+}
+.fondo-gris .izquierda .rectangulo-gris ul li.informe {
+    height: 40px; /* Altura específica */
+    width: 100px; /* Ancho específico */
+    line-height: 40px; /* Alineación vertical del texto dentro del elemento */
+    font-size: 18px; /* Tamaño de fuente específico */
+    background-image: url("/assets/imgs/informe.jpg"); /* Ruta a tu imagen */
+    background-repeat: no-repeat;
+    background-position: 20px left; /* Ajusta la posición según tu diseño */
+    padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
+    background-size: 40px 40px;
+}
+.fondo-gris .izquierda .rectangulo-gris ul li.pc {
+    height: 40px; /* Altura específica */
+    width: 100px; /* Ancho específico */
+    line-height: 40px; /* Alineación vertical del texto dentro del elemento */
+    font-size: 18px; /* Tamaño de fuente específico */
+    background-image: url("/assets/imgs/pc.jpg"); /* Ruta a tu imagen */
+    background-repeat: no-repeat;
+    background-position: 20px left; /* Ajusta la posición según tu diseño */
+    padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
+    background-size: 40px 40px;
+}
+
+.fondo-gris .contenido .centro {
+    text-align: left;
+    margin-left: 250px;
+    font-family: 'Latina Bold', sans-serif;
+    color:#1fd5fd;
+}
+
+.fondo-gris .contenido .centro .rectangulos-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.fondo-gris .contenido .centro .rectangulo {
+    border: 8px solid #1fd5fd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 250px;
+}
+
+.fondo-gris .contenido .centro .rectangulo img {
+    width: 250px; /* Ajusta el ancho de la imagen según tu diseño */
+    height: 250px; /* Ajusta la altura de la imagen según tu diseño */
+    margin-right: 10px;
+}
+
+.fondo-gris .contenido .centro .rectangulo .texto {
+    flex: 1;
+    text-align: left;
+}
+
+.fondo-gris .contenido .centro .rectangulo h3,
+.fondo-gris .contenido .centro .rectangulo p {
+    margin: 0;
+    color: white;
+    margin-bottom: 30px;
+}
+
+  .fondo-gris .contenido .derecha{
+    flex: 0.5;
+    padding: 10px;
+    margin-left: 100px;
+    justify-content: center;
+    font-family: 'Latina Bold', sans-serif;
+    color:#1fd5fd;
+  }
+  .fondo-gris .contenido .derecha .linea-azul {
+    width: 70%;
+    height: 1px;
+    background-color: #1fd5fd;
+    margin-bottom: 20px;
+}
+.fondo-gris .contenido .derecha .checkbox-list {
+    list-style: none;
+    padding: 0;
+}
+
+.fondo-gris .contenido .derecha .checkbox-list li {
+    margin-bottom: 30px;
+}
+.fondo-gris .contenido .derecha .checkbox-list label {
+    font-weight: bold;
+    color: white;
+    font-size: larger;
+}
+
+.fondo-gris .contenido .derecha .checkbox-list input[type="checkbox"] {
+    margin-right: 10px;
+    background-color: #383c40 !important; /* Fondo gris */
+    border: 2px solid #1fd5fd !important; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+}
+
+.fondo-gris .contenido .derecha .checkbox-list label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: larger;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.fondo-gris .contenido .derecha .checkbox-list input[type="checkbox"] {
+    display: none; /* Oculta la checkbox estándar */
+}
+
+.fondo-gris .contenido .derecha .checkbox-list input[type="checkbox"] + span {
+    margin-left: 10px; /* Espacio entre la checkbox y el texto */
+    background-color: #383c40; /* Fondo gris */
+    border: 2px solid #1fd5fd; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+}
+
+.fondo-gris .contenido .derecha .checkbox-list input[type="checkbox"]:checked + span {
+    background-color: #1fd5fd; /* Fondo azul cuando está seleccionado */
+    color: #383c40; /* Texto blanco cuando está seleccionado */
+}

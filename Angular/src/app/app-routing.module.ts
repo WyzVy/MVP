@@ -4,6 +4,8 @@ import { IniciarSesionComponent } from './autenticacion/iniciar-sesion/iniciar-s
 import { RecuperarComponent } from './autenticacion/recuperar/recuperar.component';
 import { RegistrarseComponent } from './autenticacion/registrarse/registrarse.component';
 import { NotificarComponent } from './usuario/notificar/notificar.component';
+import { ListarComponent } from './personal/listar/listar.component';
+import { EventosComponent } from './administrador/eventos/eventos.component';
 
 const routes: Routes = [
   {path:'ingreso', component: IniciarSesionComponent},
@@ -11,6 +13,8 @@ const routes: Routes = [
   {path:'recuperar', component: RecuperarComponent},
   {path:'registro', component: RegistrarseComponent},
   {path:'usuarionot', component: NotificarComponent},
+  {path:'personalpend', component: ListarComponent},
+  {path:'administradorevent', component: EventosComponent},
 ];
 
 @NgModule({
