@@ -6,6 +6,8 @@ import { RegistrarseComponent } from './autenticacion/registrarse/registrarse.co
 import { NotificarComponent } from './usuario/notificar/notificar.component';
 import { ListarComponent } from './personal/listar/listar.component';
 import { EventosComponent } from './administrador/eventos/eventos.component';
+import { IniciouserComponent } from './usuario/iniciouser/iniciouser.component';
+import { InicioComponent } from './personal/inicio/inicio.component';
 
 const routes: Routes = [
   {path:'ingreso', component: IniciarSesionComponent},
@@ -15,6 +17,8 @@ const routes: Routes = [
   {path:'usuarionot', component: NotificarComponent},
   {path:'personalpend', component: ListarComponent},
   {path:'administradorevent', component: EventosComponent},
+  {path:'userin', component: IniciouserComponent},
+  {path:'personalin', component: InicioComponent},
 ];
 
 @NgModule({

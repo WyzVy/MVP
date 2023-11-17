@@ -47,6 +47,12 @@
 .fondo-gris .contenido .izquierda {
     flex: 0.4;
 }
+.fondo-gris .contenido .izquierda ul li a {
+    color: #9f9f8d;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
 
 .fondo-gris .contenido .izquierda .rectangulo-gris {
     background: linear-gradient(to bottom, #383c40, #606366);

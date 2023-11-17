@@ -7,9 +7,10 @@ import { RegistrarseComponent } from './autenticacion/registrarse/registrarse.co
 import { IniciarSesionComponent } from './autenticacion/iniciar-sesion/iniciar-sesion.component';
 import { RecuperarComponent } from './autenticacion/recuperar/recuperar.component';
 import { NotificarComponent } from './usuario/notificar/notificar.component';
-import { ListarComponent } from './usuario/listar/listar.component';
 import { PersonalComponent } from './administrador/personal/personal.component';
 import { EventosComponent } from './administrador/eventos/eventos.component';
+import { IniciouserComponent } from './usuario/iniciouser/iniciouser.component';
+import { ListaruserComponent } from './usuario/listaruser/listaruser.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,10 @@ import { EventosComponent } from './administrador/eventos/eventos.component';
     IniciarSesionComponent,
     RecuperarComponent,
     NotificarComponent,
-    ListarComponent,
     PersonalComponent,
-    EventosComponent
+    EventosComponent,
+    IniciouserComponent,
+    ListaruserComponent
   ],
   imports: [
     BrowserModule,

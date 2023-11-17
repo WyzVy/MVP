@@ -82,7 +82,7 @@
     padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
     background-size: 40px 40px;
 }
-.fondo-gris .izquierda .rectangulo-gris ul li.userAzul {
+.fondo-gris .izquierda .rectangulo-gris ul li.user {
     height: 40px; /* Altura específica */
     width: 100px; /* Ancho específico */
     line-height: 40px; /* Alineación vertical del texto dentro del elemento */
@@ -93,7 +93,14 @@
     padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
     background-size: 40px 40px;
 }
-.fondo-gris .izquierda .rectangulo-gris ul li.Casa {
+.fondo-gris .contenido .izquierda ul li a {
+    color: #9f9f8d;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.fondo-gris .izquierda .rectangulo-gris ul li.CasaAzul {
+    
     color: #ffffff; /* Sobreescribe el color para el elemento con la clase "actual" */
     font-weight: bold;
     height: 40px; /* Altura específica */
@@ -128,12 +135,6 @@
     padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
     background-size: 40px 40px;
 }
-.fondo-gris .contenido .izquierda ul li a {
-    color: #9f9f8d;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 20px;
-    text-decoration: none;
-}
 
 .fondo-gris .contenido .centro {
     text-align: left;
@@ -163,20 +164,16 @@
     margin-right: 10px;
 }
 
-.fondo-gris .contenido .centro .rectangulos-container .rectangulo .texto {
+.fondo-gris .contenido .centro .rectangulo .texto {
     flex: 1;
     text-align: left;
 }
 
-.fondo-gris .contenido .centro .rectangulos-container .rectangulo h3,
+.fondo-gris .contenido .centro .rectangulo h3,
 .fondo-gris .contenido .centro .rectangulo p {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     color: white;
     margin-bottom: 30px;
-}
-.fondo-gris .contenido .centro .rectangulos-container .rectangulo p {
-    font-size: 20px;
 }
 
   .fondo-gris .contenido .derecha{
@@ -193,19 +190,51 @@
     background-color: #1fd5fd;
     margin-bottom: 20px;
 }
-.fondo-gris .contenido .derecha .botones-container {
-    display: flex;
-    margin-top: 10px; /* Ajusta el espacio entre la línea azul y los botones según sea necesario */
+.fondo-gris .contenido .derecha .checkbox-list {
+    list-style: none;
+    padding: 0;
 }
 
-.fondo-gris .contenido .derecha .botones-container .boton-azul {
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #1fd5fd;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
+.fondo-gris .contenido .derecha .checkbox-list li {
+    margin-bottom: 30px;
+}
+.fondo-gris .contenido .derecha .checkbox-list label {
     font-weight: bold;
+    color: white;
+    font-size: larger;
+}
+
+.fondo-gris .contenido .derecha .checkbox-list input[type="checkbox"] {
+    margin-right: 10px;
+    background-color: #383c40 !important; /* Fondo gris */
+    border: 2px solid #1fd5fd !important; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+}
+
+.fondo-gris .contenido .derecha .checkbox-list label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: larger;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.fondo-gris .contenido .derecha .checkbox-list input[type="checkbox"] {
+    display: none; /* Oculta la checkbox estándar */
+}
+
+.fondo-gris .contenido .derecha .checkbox-list input[type="checkbox"] + span {
+    margin-left: 10px; /* Espacio entre la checkbox y el texto */
+    background-color: #383c40; /* Fondo gris */
+    border: 2px solid #1fd5fd; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+}
+
+.fondo-gris .contenido .derecha .checkbox-list input[type="checkbox"]:checked + span {
+    background-color: #1fd5fd; /* Fondo azul cuando está seleccionado */
+    color: #383c40; /* Texto blanco cuando está seleccionado */
 }
