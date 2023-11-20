@@ -12,13 +12,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 10%;
 }
 
 .fondo-gris .header .user {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 15%;
+    width: 11%;
 }
 
 .fondo-gris .header .user h1 {
@@ -45,7 +46,7 @@
 }
 
 .fondo-gris .contenido .izquierda {
-    flex: 0.4;
+    flex: 0.5;
 }
 
 .fondo-gris .contenido .izquierda .rectangulo-gris {
@@ -53,8 +54,8 @@
     /* Degradado de arriba hacia abajo */
     padding: 20px;
     border-radius: 10px;
-    height:92%;
-    width: 100%;
+    height:95%;
+    width: 35%;
     display: flex;
     justify-content: center; /* Centra la lista horizontalmente */
 }
@@ -82,6 +83,7 @@
     padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
     background-size: 40px 40px;
 }
+
 .fondo-gris .izquierda .rectangulo-gris ul li.userBlanco {
     height: 40px; /* Altura específica */
     width: 100px; /* Ancho específico */
@@ -93,6 +95,10 @@
     padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
     background-size: 40px 40px;
 }
+.fondo-gris .izquierda .rectangulo-gris ul li.userBlanco:hover {
+    color: #1fd5fd;
+}
+
 .fondo-gris .izquierda .rectangulo-gris ul li.Casa {
     color: #ffffff; /* Sobreescribe el color para el elemento con la clase "actual" */
     font-weight: bold;
@@ -112,13 +118,26 @@
     margin-bottom: 20px;
     text-decoration: none;
 }
+.salir{
+    padding-left: 35%;
+}
+.fondo-gris .contenido .izquierda ul li a:hover {
+    color: #1fd5fd;
+}
 
 .fondo-gris .contenido .derecha {
-    text-align: left;
-    margin-left: 250px;
+    /* text-align: left; */
+    /* margin-left: 250px; */
+    width: 33.3%;
     font-family: 'Latina Bold', sans-serif;
     color:#1fd5fd;
+    text-align: center;
 }
+
+.derecha p{
+    color:#ffffff;
+}
+
 .fondo-gris .contenido .derecha form {
     display: flex;
     flex-direction: column;

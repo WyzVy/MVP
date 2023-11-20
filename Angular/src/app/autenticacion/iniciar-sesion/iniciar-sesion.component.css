@@ -1,7 +1,7 @@
 /* fondo-gris.component.css */
 .fondo-gris {
     background-color: #383c40;
-    padding: 20px;
+    /* padding: 20px; */
     height: 100vh;
     display: flex;
     align-items: center;
