@@ -11,6 +11,7 @@ import { PersonalComponent } from './administrador/personal/personal.component';
 import { EventosComponent } from './administrador/eventos/eventos.component';
 import { IniciouserComponent } from './usuario/iniciouser/iniciouser.component';
 import { ListaruserComponent } from './usuario/listaruser/listaruser.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ListaruserComponent } from './usuario/listaruser/listaruser.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
