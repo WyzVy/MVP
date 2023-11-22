@@ -17,9 +17,9 @@ export class IniciarSesionComponent {
     if (domain === "admin.com") {
       this.router.navigate(['/administradorevent'])
     } else if (domain === "user.com") {
-      this.router.navigate(['/userin'])
+      this.router.navigate(['/usuarionot'])
     } else if (domain === "staff.com") {
-      this.router.navigate(['/personalin'])
+      this.router.navigate(['/personalpend'])
     }
   }
 

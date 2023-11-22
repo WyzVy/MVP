@@ -135,6 +135,10 @@
     text-decoration: none;
 }
 
+.fondo-gris .contenido .izquierda ul li a:hover{
+    color: #1fd5fd;
+}
+
 .fondo-gris .contenido .centro {
     text-align: left;
     margin-left: 250px;

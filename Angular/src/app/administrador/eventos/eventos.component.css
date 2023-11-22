@@ -18,13 +18,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 15%;
+    width: auto;
 }
 
 .fondo-gris .header .user h1 {
     color: #21c6ea;
     font-family: 'Latina Bold', sans-serif;
-    margin: 0; /* Asegura que no haya margen dentro del h1 */
+    margin: 0 10px 0 0; /* Asegura que no haya margen dentro del h1 */
+    
 }
 
 .fondo-gris .header .imagen-izquierda {
@@ -133,6 +134,10 @@
     font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
     text-decoration: none;
+}
+
+.fondo-gris .contenido .izquierda ul li a:hover {
+    color: #1fd5fd;
 }
 
 .fondo-gris .contenido .centro {

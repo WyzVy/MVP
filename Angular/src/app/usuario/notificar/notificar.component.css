@@ -18,13 +18,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 15%;
+    width: auto;
 }
 
 .fondo-gris .header .user h1 {
     color: #21c6ea;
     font-family: 'Latina Bold', sans-serif;
-    margin: 0; /* Asegura que no haya margen dentro del h1 */
+    margin: 0 10px 0 0; /* Asegura que no haya margen dentro del h1 */
 }
 
 .fondo-gris .header .imagen-izquierda {
@@ -36,6 +36,7 @@
     max-width: 50px;
     margin-bottom: 10px;
     margin-right: 20px;
+    width: auto;
 }
 
 .fondo-gris .contenido {
@@ -45,7 +46,7 @@
 }
 
 .fondo-gris .contenido .izquierda {
-    flex: 0.4;
+    flex: 0.3;
 }
 .fondo-gris .contenido .izquierda ul li a {
     color: #9f9f8d;
@@ -118,6 +119,7 @@
     margin-left: 250px;
     font-family: 'Latina Bold', sans-serif;
     color:#1fd5fd;
+    width: 40%;
 }
 .fondo-gris .contenido .derecha form {
     display: flex;
