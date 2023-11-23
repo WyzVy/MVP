@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Objeto } from 'src/app/modelo/objeto';
+import { ObjetoServiceService } from 'src/app/shared/objeto-service.service';
 
 @Component({
   selector: 'app-listar',
@@ -8,11 +10,17 @@ import { Component } from '@angular/core';
 
 
 export class ListarComponent {
-  // Boolean variable to determine whether to hide the div
-  filter: boolean = false;
-
-  checkFilter(cond:boolean){
-    // If the filter is empty, hide the div
-
+  objetosPerdidos: any[] = [];
+  constructor(private objetosPerdidosService: ObjetoServiceService) {}
+  
+  ngOnInit() {
+    this.objetosPerdidosService.getObjetosPerdidos().subscribe(
+      (objetos: Objeto[]) => {
+        this.objetosPerdidos = objetos;
+      },
+      error => {
+        console.error('Error al obtener objetos', error);
+      }
+    );
   }
 }

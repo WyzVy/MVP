@@ -22,31 +22,18 @@
         </div>
         <div class="centro">
             <h1>Objetos pendientes</h1>
-            <div class="rectangulos-container" >
-                <!-- Rectángulo 1 -->
-                <div class="rectangulo">
-                    <img src="/assets/imgs/apple.jpg" alt="Imagen 1">
+            <div class="rectangulos-container scrollable">
+                <!-- Utiliza *ngFor para iterar sobre la lista de objetosPerdidos -->
+                <div class="rectangulo" *ngFor="let objeto of objetosPerdidos">
+                    <img [src]="'/assets/imgs/celular.jpg'" alt="Imagen del objeto">
                     <div class="texto">
-                        <h3>Descripción: Teléfono celular marca Apple
-                        </h3>
-                        <p>Región: Área de degustación 01</p>
+                        <h3>{{ objeto.descripcion }}</h3>
+                        <p>Región: {{ objeto.zona }}</p>
                     </div>
                 </div>
-                <!-- Rectángulo 2 -->
-                <div class="rectangulo">
-                    <img src="/assets/imgs/samsung.jpg" alt="Imagen 2">
-                    <div class="texto">
-                        <h3>Descripción: Teléfono celular marca Samsung
-                        </h3>
-                        <p>Región: Baños sector 03</p>
-                    </div>
-                </div>
-                <!-- Agrega más rectángulos según sea necesario -->
-            </div>
-            <div class="filter" *ngIf="filter">
-                <h1>No existen objetos pendientes para este filtro</h1>
             </div>
         </div>
+        
         <div class="derecha">
             <img src="/assets/imgs/calendar.png" alt="calendar" width="300px">
             <h1>Filtros</h1>

@@ -10,8 +10,11 @@ import { NotificarComponent } from './usuario/notificar/notificar.component';
 import { PersonalComponent } from './administrador/personal/personal.component';
 import { EventosComponent } from './administrador/eventos/eventos.component';
 import { IniciouserComponent } from './usuario/iniciouser/iniciouser.component';
-import { ListaruserComponent } from './usuario/listaruser/listaruser.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ListarComponent } from './personal/listar/listar.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,15 @@ import { FormsModule } from '@angular/forms';
     PersonalComponent,
     EventosComponent,
     IniciouserComponent,
-    ListaruserComponent
+    ListarComponent
   ],
   imports: [
+    CommonModule,
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
