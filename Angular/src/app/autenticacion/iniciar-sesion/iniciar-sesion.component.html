@@ -1,31 +1,42 @@
 <!-- fondo-gris.component.html -->
 <div class="fondo-gris">
-    <div class="contenido-izquierda">
-      <div class="titulo">
-        <h2>
-            <img src="assets\imgs\Novus.jpg" alt="Logo" class="imagen-titulo">
-          </h2>
-        <h2>Iniciar Sesión</h2>
-      </div>
-      <div class="linea-blanca"></div>
-      <div class="texto-bajo-linea">Recupera lo perdido, conectamos tu mundo disperso.</div>
+  <div class="contenido-izquierda">
+    <div class="titulo">
+      <h2>
+        <img src="assets\imgs\Novus.jpg" alt="Logo" class="imagen-titulo">
+      </h2>
+      <h2>Iniciar Sesión</h2>
     </div>
-    <div class="rectangulo">
-        <h3 class="titulo-rectangulo">Login</h3>
-        <!-- Campos para ingresar información -->
-        <form>
-        <input type="email" id="correo-electronico" name="correo-electronico" placeholder="Correo electrónico" required>
-        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
-        <div class="botones">
-            <button type="button" class="boton-enviar" (click)="redirigirAInicio()">Enviar</button>
-            <button type="button" class="boton-registrarme" (click)="redirigirARegistro()">Registrarme</button>
-          </div>
-        </form>
-        <div class="olvide-contrasena">
-          <a routerLink="/recuperar">Olvidé mi contraseña</a>
-        </div>
-        <!-- Agrega más campos según sea necesario -->
-      </div>
-      
+    <div class="linea-blanca"></div>
+    <div class="texto-bajo-linea">Recupera lo perdido, conectamos tu mundo disperso.</div>
   </div>
-  
+  <div class="rectangulo">
+    <h3 class="titulo-rectangulo">Login</h3>
+    <!-- Campos para ingresar información -->
+    <form>
+      <input type="email" [formControl]="email" id="correo-electronico" class="form-control" placeholder="Correo electrónico" required>
+      <div class="alert" role="alert" [hidden]="email.valid || !email.touched" >
+        <i class='bx bxs-error' style='color:#1fd5fd'  ></i>
+        Digite un correo electrónico valido
+      </div>
+      <input type="password" [formControl]="password" class="form-control" placeholder="Contraseña" required>
+      <div class="alert" role="alert" [hidden]="password.valid || !password.touched">
+        <i class='bx bxs-error' style='color:#1fd5fd'  ></i>
+        Digite su contraseña
+      </div>
+      <div class="botones">
+        <input type="submit" class="boton" (click)="redirigirAInicio()" value="Enviar" [disabled]="email.invalid || password.invalid">
+        <input type="submit" class="boton" (click)="redirigirARegistro()" value="Registrarme">
+      </div>
+    </form>
+    <div class="olvide-contrasena">
+      <a routerLink="/recuperar">Olvidé mi contraseña</a>
+    </div>
+    <!-- Agrega más campos según sea necesario -->
+  </div>
+
+</div>
+
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

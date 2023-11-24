@@ -5,7 +5,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    }
+}
 
 .contenido-izquierda {
     flex: 1;
@@ -30,8 +30,10 @@
 
 .imagen-titulo {
     margin-right: 10px;
-    width: 130px; /* Ajusta el tamaño de la imagen según tus preferencias */
-    height: auto; /* Para mantener la proporción original de la imagen */
+    width: 130px;
+    /* Ajusta el tamaño de la imagen según tus preferencias */
+    height: auto;
+    /* Para mantener la proporción original de la imagen */
 }
 
 .linea-blanca {
@@ -50,16 +52,24 @@
 .rectangulo {
     flex: 1.4;
     background-color: #606366;
-    height: 50%;
+    height: 60%;
     margin-right: 200px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
-    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    justify-content: center;
+    /* Centra los elementos verticalmente */
 }
+
+form{
+    width: 30rem;
+}
+
 .titulo-rectangulo {
-    color: white; /* Color del texto dentro del rectángulo */
+    color: white;
+    /* Color del texto dentro del rectángulo */
     font-family: 'Latina Bold', sans-serif;
     font-size: 50px;
     margin-bottom: 20px;
@@ -68,26 +78,30 @@
 
 /* Estilos para los campos de entrada dentro del rectángulo */
 .rectangulo input {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    margin-left: 30px;
+    margin-left: 0px;
     border: 1px solid #383c40;
     border-radius: 30px;
     background-color: #808285;
     color: #ffffff;
     font-size: 20px;
-}
+}  
+
 .rectangulo input::placeholder {
-    color: #ffffff; /* Cambia el color del texto de marcador de posición a blanco */
+    color: #ffffff;
+    /* Cambia el color del texto de marcador de posición a blanco */
     font-size: 20px;
-  }
-  .rectangulo .botones {
+}
+
+.rectangulo .botones {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-  }
-  .rectangulo button {
+}
+
+.rectangulo .boton {
     flex: 0.5;
     padding: 10px;
     margin-left: 10px;
@@ -99,16 +113,53 @@
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
-  }
-  
-  .boton-registrarme {
-    margin-right: 0; /* Para evitar el margen derecho en el último botón */
-  }
-  .olvide-contrasena a {
+}
+
+.boton-registrarme {
+    margin-right: 0;
+    /* Para evitar el margen derecho en el último botón */
+}
+
+.olvide-contrasena a {
     color: #ffffff;
-    text-decoration: underline; /* Puedes ajustar el estilo del subrayado según tus preferencias */
+    text-decoration: underline;
+    /* Puedes ajustar el estilo del subrayado según tus preferencias */
     font-size: 14px;
-    display: block; /* Para que el enlace ocupe toda la anchura del contenedor */
-    margin-top: 10px; /* Ajusta según sea necesario */
+    display: block;
+    /* Para que el enlace ocupe toda la anchura del contenedor */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Ajusta según sea necesario */
     font-family: 'Montserrat', sans-serif;
-  }
+    text-decoration: none;
+}
+
+.olvide-contrasena a:hover {
+    color: #1fd5fd;
+}
+
+.rectangulo .boton:hover {
+    border: 2px solid white;
+    /* border-radius: 20px; */
+    cursor: pointer;
+}
+
+.rectangulo .boton:disabled{
+    background-color: #999999;
+    border: none;
+    cursor: no-drop;
+}
+
+input:focus {
+    /* outline: none; */
+    outline: 2px solid white;
+    cursor: pointer;
+}
+
+.alert{
+    padding: 0;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: #1fd5fd;
+    font-weight: 700;
+}

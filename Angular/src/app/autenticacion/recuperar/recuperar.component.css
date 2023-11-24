@@ -98,3 +98,17 @@
     cursor: pointer;
     font-weight: bold;
   }
+  
+  .alert{
+    padding: 0;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: #1fd5fd;
+    font-weight: 700;
+}
+
+.botones .boton-registrarme:disabled{
+    background-color: #999999;
+    border: none;
+    cursor: no-drop;
+}

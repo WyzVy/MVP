@@ -13,18 +13,16 @@ import jakarta.persistence.OneToMany;
 
 @Entity
 public class Evento {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
-
     private String descripcion;
     private LocalDate fecha;
     @JsonIgnore
-    @OneToMany(mappedBy = "evento") 
+    @OneToMany(mappedBy = "evento")
     private List<Objeto> objetos;
-    
+
     public Evento() {
     }
 
