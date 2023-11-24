@@ -24,7 +24,8 @@
 .fondo-gris .header .user h1 {
     color: #21c6ea;
     font-family: 'Latina Bold', sans-serif;
-    margin: 0 10px 0 0; /* Asegura que no haya margen dentro del h1 */
+    margin: 0 10px 0 0;
+    /* Asegura que no haya margen dentro del h1 */
 }
 
 .fondo-gris .header .imagen-izquierda {
@@ -46,8 +47,9 @@
 }
 
 .fondo-gris .contenido .izquierda {
-    flex: 0.3;
+    flex: 0.33;
 }
+
 .fondo-gris .contenido .izquierda ul li a {
     color: #9f9f8d;
     font-family: 'Poppins', sans-serif;
@@ -60,57 +62,83 @@
     /* Degradado de arriba hacia abajo */
     padding: 20px;
     border-radius: 10px;
-    height:92%;
+    height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center; /* Centra la lista horizontalmente */
+    /* justify-content: center; Centra la lista horizontalmente */
 }
 
 .fondo-gris .contenido .izquierda ul {
     list-style: none;
     padding: 0;
+    margin-left: 20px;
 }
 
-.fondo-gris .izquierda .rectangulo-gris ul li{
+.fondo-gris .izquierda .rectangulo-gris ul li {
     color: #9f9f8d;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
-    font-size:larger;
-    
+    font-size: larger;
+
 }
+
 .fondo-gris .izquierda .rectangulo-gris ul li.actual {
-    color: #ffffff; /* Sobreescribe el color para el elemento con la clase "actual" */
+    color: #ffffff;
+    /* Sobreescribe el color para el elemento con la clase "actual" */
     font-weight: bold;
-    height: 40px; /* Altura específica */
-    width: 100px; /* Ancho específico */
-    line-height: 40px; /* Alineación vertical del texto dentro del elemento */
-    font-size: 18px; /* Tamaño de fuente específico */
-    background-image: url("/assets/imgs/carpeta_azul.jpg"); /* Ruta a tu imagen */
+    height: 40px;
+    /* Altura específica */
+    width: 100px;
+    /* Ancho específico */
+    line-height: 40px;
+    /* Alineación vertical del texto dentro del elemento */
+    font-size: 18px;
+    /* Tamaño de fuente específico */
+    background-image: url("/assets/imgs/carpeta_azul.jpg");
+    /* Ruta a tu imagen */
     background-repeat: no-repeat;
-    background-position: 20px left; /* Ajusta la posición según tu diseño */
-    padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
+    background-position: 20px left;
+    /* Ajusta la posición según tu diseño */
+    padding-left: 50px;
+    /* Ajusta el espaciado entre la imagen y el texto */
     background-size: 40px 40px;
 }
+
 .fondo-gris .izquierda .rectangulo-gris ul li.userBlanco {
-    height: 40px; /* Altura específica */
-    width: 100px; /* Ancho específico */
-    line-height: 40px; /* Alineación vertical del texto dentro del elemento */
-    font-size: 18px; /* Tamaño de fuente específico */
-    background-image: url("/assets/imgs/user_blanco.jpg"); /* Ruta a tu imagen */
+    height: 40px;
+    /* Altura específica */
+    width: 100px;
+    /* Ancho específico */
+    line-height: 40px;
+    /* Alineación vertical del texto dentro del elemento */
+    font-size: 18px;
+    /* Tamaño de fuente específico */
+    background-image: url("/assets/imgs/user_blanco.jpg");
+    /* Ruta a tu imagen */
     background-repeat: no-repeat;
-    background-position: 20px left; /* Ajusta la posición según tu diseño */
-    padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
+    background-position: 20px left;
+    /* Ajusta la posición según tu diseño */
+    padding-left: 50px;
+    /* Ajusta el espaciado entre la imagen y el texto */
     background-size: 40px 40px;
 }
+
 .fondo-gris .izquierda .rectangulo-gris ul li.Casa {
-    height: 40px; /* Altura específica */
-    width: 100px; /* Ancho específico */
-    line-height: 40px; /* Alineación vertical del texto dentro del elemento */
-    font-size: 18px; /* Tamaño de fuente específico */
-    background-image: url("/assets/imgs/casa.jpg"); /* Ruta a tu imagen */
+    height: 40px;
+    /* Altura específica */
+    width: 100px;
+    /* Ancho específico */
+    line-height: 40px;
+    /* Alineación vertical del texto dentro del elemento */
+    font-size: 18px;
+    /* Tamaño de fuente específico */
+    background-image: url("/assets/imgs/casa.jpg");
+    /* Ruta a tu imagen */
     background-repeat: no-repeat;
-    background-position: 20px left; /* Ajusta la posición según tu diseño */
-    padding-left: 50px; /* Ajusta el espaciado entre la imagen y el texto */
+    background-position: 20px left;
+    /* Ajusta la posición según tu diseño */
+    padding-left: 50px;
+    /* Ajusta el espaciado entre la imagen y el texto */
     background-size: 40px 40px;
 }
 
@@ -118,9 +146,15 @@
     text-align: left;
     margin-left: 250px;
     font-family: 'Latina Bold', sans-serif;
-    color:#1fd5fd;
+    color: #1fd5fd;
     width: 40%;
 }
+
+.fondo-gris .contenido .derecha h1{
+    text-align: center;
+    font-weight: 700;
+}
+
 .fondo-gris .contenido .derecha form {
     display: flex;
     flex-direction: column;
@@ -146,14 +180,29 @@
     border-radius: 20px;
     background-color: #606366;
     color: #ffffff;
+    border: none;
+    resize: none;
 }
-.fondo-gris .contenido .derecha form textarea::placeholder {
-    color: #b4adad; /* Cambia el color del texto de marcador de posición a blanco */
-  }
 
-  .fondo-gris .contenido .derecha form button {
+textarea:focus {
+    outline: 2px solid #1fd5fd;
+    cursor: pointer;
+}
+
+select:focus{
+    outline: 2px solid #1fd5fd;
+    cursor: pointer;
+}
+
+.fondo-gris .contenido .derecha form textarea::placeholder {
+    color: #b4adad;
+    /* Cambia el color del texto de marcador de posición a blanco */
+}
+
+.fondo-gris .contenido .derecha form button {
+    margin: auto;
     padding: 10px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     border: none;
     border-radius: 5px;
     background-color: #1fd5fd;
@@ -161,4 +210,14 @@
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
-  }
+    width: 20%;
+}
+
+.fondo-gris .contenido .derecha form button:hover{
+    border: 2px solid #ffffff;
+} 
+
+
+.fondo-gris .contenido .izquierda ul li a:hover {
+    color: #1fd5fd;
+}

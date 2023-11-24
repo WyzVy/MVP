@@ -11,15 +11,15 @@
         <div class="izquierda">
             <div class="rectangulo-gris">
                 <ul>
-                    <li class="Casa"><a href="/userin" class="userAzul">Inicio</a></li>
-                    <li class="userBlanco">Solicitudes</li>
+                    <!-- <li class="Casa"><a href="/userin" class="userAzul">Inicio</a></li>
+                    <li class="userBlanco">Solicitudes</li> -->
                     <li class="actual">Notificar</li>
-                    <li class="salir"><a href="/ingreso" class="userAzul">SALIR</a></li>
+                    <li class="salir"><a href="/ingreso" class="userAzul">SALIR  <i class='bx bxs-exit' style='color:#1fd5fd' ></i></a></li>
                 </ul>
             </div>
         </div>
         <div class="derecha">
-            <h1>Notificar Objeto</h1>
+            <h1>Notificar objeto</h1>
             <form>
                 <div>
                   <label for="descripcion">Descripción del objeto:</label>
@@ -27,9 +27,11 @@
                 </div>
                 <div>
                   <label for="categoria">Evento:</label>
-                  <select id="categoria" name="categoria" required [(ngModel)]="nuevoObjeto.evento.descripcion">
-                    <option *ngFor="let evento of eventos" [value]="evento">{{ evento }}</option>
-                  </select>
+                  <div >
+                    <select id="categoria" name="categoria" required [(ngModel)]="nuevoObjeto.evento.descripcion">
+                      <option *ngFor="let evento of eventos" [value]="evento">{{ evento }}</option>
+                    </select>
+                  </div>
                 </div>
                 <div>
                   <label for="zona">¿En qué zona se perdió el objeto?</label>

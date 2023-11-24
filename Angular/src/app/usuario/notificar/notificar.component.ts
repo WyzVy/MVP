@@ -28,6 +28,7 @@ export class NotificarComponent {
     );
   }
   guardar() {
+    alert('Objeto registrado con exito');
     console.log('Guardando:', this.nuevoObjeto);
     this.objetoservice.guardarobjeto(this.nuevoObjeto).subscribe();
   }
